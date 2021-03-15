@@ -1,0 +1,49 @@
+html{
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+li{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+p {
+	margin: 0;
+}
+img {
+	display: block;
+}
+input {
+	outline: none;
+	display: inline-block;
+}
+button {
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+}
+
+body {
+	color: #000;
+	overflow-x: hidden;
+}
