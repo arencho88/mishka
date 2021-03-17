@@ -3,10 +3,175 @@
 @import 'fonts';
 
 
+// nav -------------------------------/
+.nav {
+	max-width: 1150px;
+	margin: 0 auto;
+	border-top: 1px solid #ececec;
 
+	position: relative;
+	&::after {
+		content: '';
 
+		position: absolute;
+		top: 78px;
+		left: 0;
+		right: 0;
+		
+		height: 1px;
 
+		background-color: #ececec;
+	}
+	&__burger-btn {
+		position: absolute;
+		top: 30px;
+		right: 30px;
 
+		width: 21px;
+		height: 20px;
+		padding: 0;
+		border: none;
+
+		background-color: transparent;
+		cursor: pointer;
+	}
+	&__list {
+		@include reset-ul;
+		font-size: 17px;
+		font-weight: 700;
+	}
+	&__link {
+		display: block;
+		padding: 28px 15px 27px 76px;
+		border-bottom: 1px solid #ececec;
+
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			color: rgba($color: #000, $alpha: 0.6);
+		}
+		&:active {
+			color: rgba($color: #000, $alpha: 0.3);
+		}
+	}
+	&__delivery {
+		display: none;
+		width: 265px;
+		margin: 20px 0 0;
+
+		color: #444;
+		text-align: right;
+
+	}
+}
+// стили бургер-кнопки при открытой и закрытой навигации
+.nav--closed {
+	.nav__burger-btn {
+		&::before {
+			content: '';
+
+			position: absolute;
+			top: 2px;
+			left: 0;
+
+			width: 21px;
+			height: 2px;
+
+			background-color: #000;
+			box-shadow: 0 6px 0 0 #000, 0 12px 0 0 #000;
+		}
+	}
+}
+.nav--opened {
+	.nav__burger-btn {
+		&::before,
+		&::after {
+			content: '';
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			width: 27px;
+			height: 2px;
+
+			background-color: #000;
+		}
+		&::before {
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+		&::after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+	}
+}
+
+// user ------------------------------/
+.user {
+	&__list {
+		@include reset-ul;
+		font-size: 17px;
+		font-weight: 700;
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		padding: 28px 15px 27px 30px;
+		border-bottom: 1px solid #ececec;
+
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			color: rgba($color: #000, $alpha: 0.6);
+			.user__icon {
+				opacity: 1;
+				path {
+					fill: $green;
+				}
+			}
+		}
+		&:active {
+			color: rgba($color: #000, $alpha: 0.3);
+			.user__icon {
+				opacity: 0.3;
+				path {
+					fill: $green;
+				}
+			}
+		}
+	}
+	&__icon {
+		margin: 0 26px 0 0;
+
+		opacity: 0.2;
+	}
+}
+
+// logo ------------------------------/
+.logo {
+	display: block;
+	width: 86px;
+	height: 35px;
+	margin: 22px auto;
+	&[href] {
+		&:hover  {
+			opacity: 0.6;
+		}
+		&:active  {
+			opacity: 0.3;
+		}
+	}
+	&__img {
+		display: block;
+	}
+}
+
+// main-section ----------------------/
+.main-section {
+	padding: 74px 0 0;
+	overflow: hidden;
+	background-color: #f9f9f9;
+}
 
 
 

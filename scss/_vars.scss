@@ -1,0 +1,8 @@
+$green: #63d1bb;
+
+@mixin reset-ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}

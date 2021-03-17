@@ -1,0 +1,164 @@
+@media (max-width: 768px) {
+	// nav ----------------------------/
+	.nav--closed {
+		.nav__list {
+			display: none;
+		}
+		.user__list {
+			display: none;
+		}
+	}
+	.nav--nojs {
+		.nav__burger-btn {
+			display: none;
+		}
+		.nav__list {
+			display: block;
+		}
+		.user__list {
+			display: block;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	// nav -------------------------------/
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0 50px;
+		height: 90px;
+		&::after {
+			top: 89px;
+		}
+		&__burger-btn {
+			display: none;
+		}
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			width: 385px;
+			order: 3;
+
+			font-size: 15px;
+		}
+		&__item--new,
+		&__item--sale {
+			display: none;
+		}
+		&__link {
+			padding: 20px 35px 20px 0;
+			border: none;
+		}
+		&__delivery {
+			display: block;
+			order: 4;
+		}
+	}
+
+	// user ---------------------------/
+	.user {
+		width: 350px;
+		height: 100%;
+		order: 2;
+		&__list {
+			display: flex;
+			justify-content: flex-end;
+		}
+		&__link {
+			border: none;
+			border-left: 1px solid #ececec;
+			padding: 33px 0 33px 30px;
+		}
+		&__link--search {
+			padding: 33px 31px 33px 33px;
+
+			font-size: 0;
+			.user__icon {
+				margin: 0;
+			}
+		}
+		&__icon {
+			margin: 0 32px 0 0;
+		}
+	}
+
+	// logo ---------------------------/
+	.logo {
+		width: 315px;
+		height: 46px;
+		margin: 22px 0;
+		order: 1;
+	}
+}
+
+
+
+@media (min-width: 1150px) {
+	// nav ----------------------------/
+	.nav {
+		justify-content: flex-start;
+		&::after {
+			left: 0;
+			right: auto;
+
+			width: 100vw;
+
+			background-color: #ececec;
+		}
+		&::before {
+			content: '';
+
+			position: absolute;
+			top: 89px;
+			right: 0;
+			
+			width: 100vw;
+			height: 1px;
+	
+			background-color: #ececec;
+		}
+		&__list {
+			width: 445px;
+			margin: 0 40px 0 -35px;
+
+			font-size: 17px;
+			order: 1;
+		}
+		&__item--new,
+		&__item--sale {
+			display: block;
+		}
+		&__item--new {
+			.nav__link {
+				padding: 33px 4px 33px 35px;
+			}
+		}
+		&__link {
+			padding: 33px 35px;
+		}
+		&__delivery {
+			margin: 0;
+
+			position: absolute;
+			top: 125px;
+			right: 50px;
+		}
+	}
+
+	// user ---------------------------/
+	.user {
+		margin-left: auto;
+
+		order: 3;
+	}
+
+	// logo ---------------------------/
+	.logo {
+		width: 149px;
+		height: 72px;
+		margin: 9px 0 7px;
+		order: 2;
+	}
+}

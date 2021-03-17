@@ -7,15 +7,19 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
 	<header class="header">
-		<nav class="nav">
-			<a class="logo">
-				<picture>
-					<source media="(min-width: 1150px)" srcset="images/logo-desktop.svg">
-					<source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-					<img class="logo__img" src="images/logo-mobile.svg" alt="логотип">
-				</picture>
-			</a>
+		<nav class="nav nav--opened">
+			<button class="nav__burger-btn" type="button"></button>
+			<div class="logo">
+				<a class="logo__link">
+					<picture>
+						<source media="(min-width: 1150px)" srcset="images/logo-desktop.svg">
+						<source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+						<img class="logo__img" src="images/logo-mobile.svg" alt="логотип">
+					</picture>
+				</a>
+			</div>
 			<ul class="nav__list">
 				<li class="nav__item">
 					<a class="nav__link" href="catalog.html">
@@ -27,12 +31,12 @@
 						Вязание на заказ
 					</a>
 				</li>
-				<li class="nav__item">
+				<li class="nav__item nav__item--new">
 					<a class="nav__link" href="#">
 						Новые поступления
 					</a>
 				</li>
-				<li class="nav__item">
+				<li class="nav__item nav__item--sale">
 					<a class="nav__link" href="#">
 						Распродажа
 					</a>
@@ -41,18 +45,20 @@
 			<div class="user">
 				<ul class="user__list">
 					<li class="user__item">
-						<a class="user__link" href="#">
+						<a class="user__link user__link--search" href="#">
+							<svg class="user__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 17.6 17.6"><path d="M17.27,15.73l-3.42-3.42A7.62,7.62,0,0,0,15.4,7.7a7.74,7.74,0,1,0-3.09,6.15l3.42,3.42a1,1,0,0,0,.77.33,1.1,1.1,0,0,0,1.1-1.1A1,1,0,0,0,17.27,15.73ZM2.2,7.7a5.5,5.5,0,1,1,5.5,5.5A5.5,5.5,0,0,1,2.2,7.7Z" fill="#231f20"/></svg>
 							Поиск по сайту
 						</a>
 					</li>
 					<li class="user__item">
 						<a class="user__link" href="#">
+							<svg class="user__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 20.29 18.85"><path d="M19.54,7.23H16.39L13,.41a.75.75,0,0,0-1-.33.76.76,0,0,0-.34,1l3.08,6.14H5.58L8.65,1.09a.75.75,0,0,0-.34-1,.74.74,0,0,0-1,.33L3.9,7.23H.75a.75.75,0,0,0,0,1.5H.91l.85,3a.76.76,0,0,0-.31.59.74.74,0,0,0,.69.74l1.66,5.8H16.5l1.65-5.8a.73.73,0,0,0,.38-1.33l.86-3h.15a.75.75,0,0,0,0-1.5ZM15.36,17.35H4.93L3.71,13.06H16.59ZM17,11.56H3.28L2.47,8.73H17.83Z" transform="translate(0 0)" fill="#231f20"/></svg>
 							Корзина: пока пуста
 						</a>
 					</li>
 				</ul>
 			</div>
-			<p class="delivery">Бесплатная доставка по России</p>
+			<p class="nav__delivery">Бесплатная доставка по России</p>
 		</nav>
 	</header>
 
