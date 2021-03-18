@@ -46,3 +46,16 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 700;
 }
+.btn {
+  display: block;
+  padding: 14px 85px;
+  border: 2px solid #444;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #444;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}

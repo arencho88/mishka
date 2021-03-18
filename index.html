@@ -93,44 +93,55 @@
 			</div>
 		</section>
 		<section class="baskets">
-			<h2 class="title">Вязаные корзинки</h2>
-			<ul class="baskets__list">
-				<li class="baskets__item">
+			<div class="container">
+				<div class="baskets__top">
+					<h2 class="baskets__title title">Вязаные корзинки</h2>
 					<p class="baskets__status">
 						Товар недели
 					</p>
-					<p class="baskets__info">
-						Экологически чистая пряжа, 
-						ручная работа. Доступны в 
-						шести расцветках, и трех размерах.
-					</p>
-					<table class="baskets__table">
-						<tr>
-							<td>Цвет:</td>
-							<td>«Тиффани»/серый</td>
-						</tr>
-						<tr>
-							<td>Диаметр:</td>
-							<td>25 см</td>
-						</tr>
-						<tr>
-							<td>Высота:</td>
-							<td>15 см</td>
-						</tr>
-					</table>
-					<picture>
-						<source media="(min-width: 1150px)" srcset="images/content/basket-img-desktop.jpg">
-						<source media="(min-width: 768px)" srcset="images/content/basket-img-tablet.jpg">
-						<img class="baskets__img" src="images/content/basket-img-mobile.jpg" alt="Вязанная корзинка">
-					</picture>
-					<p class="baskets__price">
-						Цена: 990 руб.
-					</p>
-					<a class="baskets__btn btn" href="#">Заказать</a>
-				</li>
-			</ul>
+				</div>
+				<ul class="baskets__list">
+					<li class="baskets__item">
+						<div class="baskets__info-box">					
+							<p class="baskets__text">
+								Экологически чистая пряжа, 
+								ручная работа. Доступны в 
+								шести расцветках, и трех размерах.
+							</p>
+							<table class="baskets__table">
+								<tr>
+									<td class="baskets__cell">Цвет:</td>
+									<td class="baskets__cell">«Тиффани»/серый</td>
+								</tr>
+								<tr>
+									<td class="baskets__cell">Диаметр:</td>
+									<td class="baskets__cell">25 см</td>
+								</tr>
+								<tr>
+									<td class="baskets__cell">Высота:</td>
+									<td class="baskets__cell">15 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="baskets__img-box">
+							<picture>
+								<source media="(min-width: 1150px)" srcset="images/content/basket-img-desktop.jpg">
+								<source media="(min-width: 768px)" srcset="images/content/basket-img-tablet.jpg">
+								<img class="baskets__img" src="images/content/basket-img-mobile.jpg" alt="Вязанная корзинка">
+							</picture>
+						</div>
+						<div class="baskets__price-box">
+							<p class="baskets__price">
+								Цена: 990 руб.
+							</p>
+							<a class="baskets__btn btn" href="#">Заказать</a>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<section class="about">
+			<h2 class="title">Коротко о нас</h2>
 			<ul class="about__list">
 				<li class="about__item">
 					Экологически 
