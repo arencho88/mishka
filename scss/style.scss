@@ -168,9 +168,83 @@
 
 // main-section ----------------------/
 .main-section {
-	padding: 74px 0 0;
-	overflow: hidden;
+	margin: 0 0 30px;
+
 	background-color: #f9f9f9;
+	&__inner {
+		max-width: 1150px;
+		margin: 0 auto;	
+		padding: 74px 0 0;
+
+		background-image: url(../images/main-section-bg-mobile.jpg);
+		background-repeat: no-repeat;
+		background-position: center -17px;
+	}
+	&__title {
+		// width: 260px;
+		margin: 0 0 120px;
+
+		font-size: 27px;
+		text-align: center;
+	}
+	&__list {
+		@include reset-ul;
+		font-size: 19px;
+		font-weight: 700;
+
+		position: relative;
+	}
+	&__link {
+		display: block;
+		padding: 27.5px;
+
+		position: relative;
+
+		color: #fff;
+		text-decoration: none;
+		&::after {
+			content: '';
+
+			position: absolute;
+			top: 50%;
+
+			transform: translateY(-50%);
+
+			opacity: 0.5;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+	}
+	&__item--interior {
+		.main-section__link {
+			background-color: $green;
+			&::after {
+				right: 36px;
+
+				width: 40px;
+				height: 62px;
+
+				background-image: url(../images/icons/interior.svg);
+			}
+		}
+	}
+	&__item--toys {
+		.main-section__link {
+			background-color: #56c3b2;
+			&::after {
+				right: 27px;
+
+				width: 60px;
+				height: 60px;
+
+				background-image: url(../images/icons/toy.svg);
+			}
+		}
+	}
+	&__text {
+		width: 160px;
+		margin: 0;
+	}
 }
 
 
