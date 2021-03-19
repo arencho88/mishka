@@ -70,6 +70,20 @@
 
 		background-size: 37px 15px;
 	}
+
+	// about --------------------------/
+	.about {
+		&__title {
+			margin: 0 0 45px;
+		}
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__item {
+			width: 50%;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -235,6 +249,37 @@
 			max-width: 100%;
 		}
 	}
+
+	// about --------------------------/
+	.about {
+		margin: 0 0 24px;
+		&__list {
+			font-size: 20px;
+			line-height: 22px;
+		}
+		&__item {
+			padding: 54px 0 56px;
+		}
+		&__item--ecological {
+			order: 1;
+		}
+		&__item--scandinavian {
+			order: 3;
+		}
+		&__item--likes {
+			order: 5;
+		}
+		&__item--manually {
+			order: 2;
+		}
+		&__item--support {
+			order: 4;
+		}
+		&__item--box {
+			order: 6;
+		}
+		
+	}
 }
 
 
@@ -377,6 +422,14 @@
 		}
 		&__price-box {
 			top: 527px;
+		}
+	}
+
+	// about --------------------------/
+	.about {
+		margin: 0 0 30px;
+		.container {
+			padding: 0 225px;
 		}
 	}
 }

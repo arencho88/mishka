@@ -327,7 +327,45 @@
 	}
 }
 
+// about -----------------------------/
+.about {
+	margin: 0 0 30px;
+	&__title {
+		margin: 0 0 30px;
+	}
+	&__list {
+		@include reset-ul;
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 20px;
+	}
+	&__item {
+		padding: 54px 0 28px;
 
+		position: relative;
+	}
+	&__icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__icon--flower {
+		left: 8px;
+	}
+	&__icon--heart {
+		top: 5px;
+		left: 7px;
+	}
+	&__icon--clew {
+		left: 3px;
+	}
+	&__icon--box {
+		left: 3px;
+	}
+	&__text {
+		margin: 0;
+	}
+}
 
 
 
