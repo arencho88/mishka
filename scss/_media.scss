@@ -67,12 +67,18 @@
 	// baskets ------------------------/
 	.baskets {
 		margin: 0 0 50px;
+		.container {
+			padding: 0 50px 42px;
 
-		background-size: 37px 15px;
+			background-size: 37px 15px;
+		}
 	}
 
 	// about --------------------------/
 	.about {
+		.container {
+			padding: 0 50px;
+		}
 		&__title {
 			margin: 0 0 45px;
 		}
@@ -84,7 +90,18 @@
 			width: 50%;
 		}
 	}
+
+	// reviews ------------------------/
+	.reviews {
+		&__inner {
+			padding: 0 50px 50px;
+
+			background-size: 37px 15px;
+		}
+	}
 }
+
+
 
 @media (min-width: 768px) {
 	// container ----------------------/
@@ -188,9 +205,9 @@
 
 	// baskets ------------------------/
 	.baskets {
-		padding: 0 0 70px;
-
-		background-size: 37px 15px;
+		.container {		
+			padding: 0 50px 70px;
+		}
 		&__top {
 			display: flex;
 			justify-content: space-between;
@@ -279,6 +296,60 @@
 			order: 6;
 		}
 		
+	}
+
+	// reviews ------------------------/
+	.reviews {
+		margin: 0 0 60px;
+		&__inner {
+			position: relative;
+
+			min-height: 537px;
+			padding: 173px 50px 80px;
+
+			background-image: url(../images/baskets-zigzag.svg),
+									url(../images/reviews-bg.jpg);
+			background-position: 0 100%, 0 0;
+			background-size: 37px 15px, auto auto;
+			background-repeat: repeat-x, no-repeat;
+		}
+		&__title {
+			margin: 0;
+
+			position: absolute;
+			top: 75px;
+			left: 50px;
+		}
+		&__text {
+			margin: 0 0 60px;
+
+			font-size: 17px;
+		}
+		&__name {
+			margin: 0;
+
+			font-size: 18px;
+		}
+		.slick-arrow {
+			bottom: 0;
+
+			width: 88px;
+			border: none;
+		}
+		.slick-prev {
+			left: auto;
+			right: 88px;
+		}
+		&__btn {
+			width: 175px;
+			padding: 14px 38px;
+
+			position: absolute;
+			top: 80px;
+			right: 50px;
+
+			font-size: 17px;
+		}
 	}
 }
 
@@ -383,12 +454,16 @@
 
 	// baskets ------------------------/
 	.baskets {
-		padding: 0 0 95px;
-		margin: 0 0 66px;
-
-		background-size: 53px 23px;
+		max-width: 1150px;
+		padding: 0 50px;
+		margin: 0 auto 66px;
 		.container {
 			position: relative;
+
+			padding: 0 0 95px;
+
+			background-size: 53px 23px;
+			background-position: 22px 100%;
 		}
 		&__top {
 			margin: 0;
@@ -430,6 +505,28 @@
 		margin: 0 0 30px;
 		.container {
 			padding: 0 225px;
+		}
+	}
+
+	// reviews ------------------------/
+	.reviews {
+		max-width: 1150px;
+		margin: 0 auto;
+		padding: 0 50px;
+		&__inner {
+			padding: 173px 0 80px 175px;
+
+			background-position: 24px 100%, 0 0;
+			background-size: 53px 23px, auto auto;
+		}
+		&__title {
+			left: 175px;
+		}
+		&__text {
+			margin: 0 0 40px;
+		}
+		&__btn {
+			right: 0;
 		}
 	}
 }

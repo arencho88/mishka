@@ -260,13 +260,15 @@
 
 // baskets ---------------------------/
 .baskets {
-	padding: 0 0 42px;
 	margin: 0 0 28px;
+	.container {
+		padding: 0 30px 42px;
 
-	background-image: url(../images/baskets-zigzag.svg);
-	background-position: 0 100%;
-	background-size: 16px 7px;
-	background-repeat: repeat-x;
+		background-image: url(../images/baskets-zigzag.svg);
+		background-position: 0 100%;
+		background-size: 16px 7px;
+		background-repeat: repeat-x;
+	}
 	&__title {
 		margin: 0 0 8px;
 	}
@@ -366,6 +368,98 @@
 		margin: 0;
 	}
 }
+
+// reviews ---------------------------/
+.reviews {
+	margin: 0 0 38px;
+
+	&__inner {
+		max-width: 1150px;
+		margin: 0 auto;
+		padding: 0 30px 50px;
+
+		background-image: url(../images/baskets-zigzag.svg);
+		background-position: 0 100%;
+		background-size: 16px 7px;
+		background-repeat: repeat-x;
+	}
+	&__title {
+		margin: 0 0 27px;
+	}
+	&__list {
+		@include reset-ul;
+	}
+	&__text {
+		margin: 0 0 30px;
+
+		line-height: 30px;
+		color: #444;
+	}
+	&__name {
+		margin: 0 0 120px;
+
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+	&__mail {
+		display: block;
+		margin: 4px 0 0;
+
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 30px;
+		color: #444;
+		text-decoration: none;
+	}
+	.slick-list {
+		margin: 0 0 0 -50px;
+	}
+	.slick-slide {
+		margin: 0 0 0 50px;
+	}
+	.slick-arrow {
+		position: absolute;
+		bottom: 38px;
+
+		width: 130px;
+		height: 52px;
+		padding: 0;
+		border: 1px solid #ececec;
+
+		background-color: transparent;
+		&::after {
+			content: '';
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			width: 50px;
+			height: 26px;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.slick-prev {
+		left: 0;
+		z-index: 2;
+		&::after {
+			background-image: url(../images/icons/reviews-arrow-prev.svg);
+		}
+	}
+	.slick-next {
+		right: 0;
+		&::after {
+			background-image: url(../images/icons/reviews-arrow-next.svg);
+		}
+	}
+	&__btn {
+		max-width: 360px;
+		margin: 0 auto;
+	}
+}
+
+
 
 
 
