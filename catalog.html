@@ -65,193 +65,122 @@
 		</div>
 	</header>
 
-	<main>
-		<section class="main-section">
-			<div class="main-section__inner">
-				<h1 class="main-section__title title">
-					Милые штуки
-					<br>ручной 
-					<br>работы для дома
-				</h1>
-				<ul class="main-section__list">
-					<li class="main-section__item main-section__item--interior">
-						<a class="main-section__link" href="#">
-							<p class="main-section__text">
-								Предметы 
-								интерьера
-							</p>
-						</a>
-					</li>
-					<li class="main-section__item main-section__item--toys">
-						<a class="main-section__link" href="#">
-							<p class="main-section__text">
-								Детские 
-								игрушки
-							</p>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="baskets">
-			<div class="container">
-				<div class="baskets__top">
-					<h2 class="baskets__title title">Вязаные корзинки</h2>
-					<p class="baskets__status">
-						Товар недели
-					</p>
-				</div>
-				<ul class="baskets__list">
-					<li class="baskets__item">
-						<div class="baskets__info-box">					
-							<p class="baskets__text">
-								Экологически чистая пряжа, 
-								ручная работа. Доступны в 
-								шести расцветках, и трех размерах.
-							</p>
-							<table class="baskets__table">
-								<tr>
-									<td class="baskets__cell">Цвет:</td>
-									<td class="baskets__cell">«Тиффани»/серый</td>
-								</tr>
-								<tr>
-									<td class="baskets__cell">Диаметр:</td>
-									<td class="baskets__cell">25 см</td>
-								</tr>
-								<tr>
-									<td class="baskets__cell">Высота:</td>
-									<td class="baskets__cell">15 см</td>
-								</tr>
-							</table>
+	<main class="catalog-page">
+		<h1 class="catalog-page__title title">
+			Каталог товаров
+		</h1>
+
+		<div class="container">
+			<section class="catalog">
+				<h2 class="visually-hidden">Каталог товаров</h2>
+				<ul class="catalog__list">
+					<li class="catalog__item">
+						<div class="catalog__info-box">
+							<div class="catalog__info">
+								<h3 class="catalog__name">
+									<a class="catalog__name-link" href="#">
+										Зайчик-попрыгайчик
+									</a>
+								</h3>
+								<p class="catalog__feature">
+									Рост 30 см, вес 200 г
+								</p>
+							</div>
+							<div class="catalog__price-box">
+								<p class="catalog__price">
+									1 200 руб.
+								</p>
+								<a class="catalog__basket-link" href="#">
+									<svg class="catalog__basket-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 20.29 18.85"><path d="M19.54,7.23H16.39L13,.41a.75.75,0,0,0-1-.33.76.76,0,0,0-.34,1l3.08,6.14H5.58L8.65,1.09a.75.75,0,0,0-.34-1,.74.74,0,0,0-1,.33L3.9,7.23H.75a.75.75,0,0,0,0,1.5H.91l.85,3a.76.76,0,0,0-.31.59.74.74,0,0,0,.69.74l1.66,5.8H16.5l1.65-5.8a.73.73,0,0,0,.38-1.33l.86-3h.15a.75.75,0,0,0,0-1.5ZM15.36,17.35H4.93L3.71,13.06H16.59ZM17,11.56H3.28L2.47,8.73H17.83Z" transform="translate(0 0)" fill="#231f20"/></svg>
+								</a>
+							</div>
 						</div>
-						<div class="baskets__img-box">
+						<a class="catalog__img-box" href="#">
 							<picture>
-								<source media="(min-width: 1150px)" srcset="images/content/basket-img-desktop.jpg">
-								<source media="(min-width: 768px)" srcset="images/content/basket-img-tablet.jpg">
-								<img class="baskets__img" src="images/content/basket-img-mobile.jpg" alt="Вязанная корзинка">
+								<source media="(min-width: 1150px)" srcset="images/content/catalog-img-1-desktop.jpg">
+								<source media="(min-width: 768px)" srcset="images/content/catalog-img-1-tablet.jpg">
+									<img class="catalog__img" src="images/content/catalog-img-1.jpg" alt="вязанный зайчик">
 							</picture>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<div class="catalog__info-box">
+							<div class="catalog__info">
+								<h3 class="catalog__name">
+									<a class="catalog__name-link" href="#">
+										Корзинка для белья
+									</a>
+								</h3>
+								<p class="catalog__feature">
+									Диаметр 15 см, высота 10 см
+								</p>
+							</div>
+							<div class="catalog__price-box">
+								<p class="catalog__price">
+									690 руб.
+								</p>
+								<a class="catalog__basket-link" href="#">
+									<svg class="catalog__basket-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 20.29 18.85"><path d="M19.54,7.23H16.39L13,.41a.75.75,0,0,0-1-.33.76.76,0,0,0-.34,1l3.08,6.14H5.58L8.65,1.09a.75.75,0,0,0-.34-1,.74.74,0,0,0-1,.33L3.9,7.23H.75a.75.75,0,0,0,0,1.5H.91l.85,3a.76.76,0,0,0-.31.59.74.74,0,0,0,.69.74l1.66,5.8H16.5l1.65-5.8a.73.73,0,0,0,.38-1.33l.86-3h.15a.75.75,0,0,0,0-1.5ZM15.36,17.35H4.93L3.71,13.06H16.59ZM17,11.56H3.28L2.47,8.73H17.83Z" transform="translate(0 0)" fill="#231f20"/></svg>
+								</a>
+							</div>
 						</div>
-						<div class="baskets__price-box">
-							<p class="baskets__price">
-								Цена: 990 руб.
-							</p>
-							<a class="baskets__btn btn" href="#">Заказать</a>
+						<a class="catalog__img-box" href="#">
+							<picture>
+								<source media="(min-width: 1150px)" srcset="images/content/catalog-img-2-desktop.jpg">
+								<source media="(min-width: 768px)" srcset="images/content/catalog-img-2-tablet.jpg">
+									<img class="catalog__img" src="images/content/catalog-img-2.jpg" alt="Корзинка для белья">
+							</picture>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<div class="catalog__info-box">
+							<div class="catalog__info">
+								<h3 class="catalog__name">
+									<a class="catalog__name-link" href="#">
+										Большая корзинка для игрушек
+									</a>
+								</h3>
+								<p class="catalog__feature">
+									Диаметр 30 см, высота 30 см
+								</p>
+							</div>
+							<div class="catalog__price-box">
+								<p class="catalog__price">
+									1 500 руб.
+								</p>
+								<a class="catalog__basket-link" href="#">
+									<svg class="catalog__basket-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 20.29 18.85"><path d="M19.54,7.23H16.39L13,.41a.75.75,0,0,0-1-.33.76.76,0,0,0-.34,1l3.08,6.14H5.58L8.65,1.09a.75.75,0,0,0-.34-1,.74.74,0,0,0-1,.33L3.9,7.23H.75a.75.75,0,0,0,0,1.5H.91l.85,3a.76.76,0,0,0-.31.59.74.74,0,0,0,.69.74l1.66,5.8H16.5l1.65-5.8a.73.73,0,0,0,.38-1.33l.86-3h.15a.75.75,0,0,0,0-1.5ZM15.36,17.35H4.93L3.71,13.06H16.59ZM17,11.56H3.28L2.47,8.73H17.83Z" transform="translate(0 0)" fill="#231f20"/></svg>
+								</a>
+							</div>
 						</div>
+						<a class="catalog__img-box" href="#">
+							<picture>
+								<source media="(min-width: 1150px)" srcset="images/content/catalog-img-3-desktop.jpg">
+								<source media="(min-width: 768px)" srcset="images/content/catalog-img-3-tablet.jpg">
+									<img class="catalog__img" src="images/content/catalog-img-3.jpg" alt="Большая корзинка для игрушек">
+							</picture>
+						</a>
 					</li>
 				</ul>
-			</div>
-		</section>
-		<section class="about">
-			<div class="container">
-				<h2 class="about__title title">Коротко о нас:</h2>
-				<ul class="about__list">
-					<li class="about__item about__item--ecological">
-						<svg class="about__icon about__icon--flower" xmlns="http://www.w3.org/2000/svg" width="32" height="37" viewBox="0 0 31.97 37.3"><path d="M16,37.3a16,16,0,0,0,16-16A16,16,0,0,0,16,37.3ZM4.63,16.43a4.44,4.44,0,0,0,7,3.66l0,.34a4.45,4.45,0,0,0,8.89,0l0-.34a4.37,4.37,0,0,0,2.51.78,4.43,4.43,0,0,0,1.9-8.44,4.43,4.43,0,1,0-4.41-7.65l0-.34a4.45,4.45,0,0,0-8.89,0l0,.34A4.37,4.37,0,0,0,9.07,4a4.43,4.43,0,0,0-1.9,8.43A4.42,4.42,0,0,0,4.63,16.43ZM16,8a4.44,4.44,0,1,1-4.45,4.44A4.44,4.44,0,0,1,16,8ZM0,21.31a16,16,0,0,0,16,16A16,16,0,0,0,0,21.31Z" fill="#63d1bb"/></svg>
-						<p class="about__text">
-							Экологически 
-							<br>чистые материалы
-						</p>
-					</li>
-					<li class="about__item about__item--scandinavian">
-						<svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="47" height="27" viewBox="0 0 46.58 27.33"><path d="M42.67,0H3.9A3.91,3.91,0,0,0,0,3.9V23.43a3.91,3.91,0,0,0,3.9,3.9H42.67a3.91,3.91,0,0,0,3.91-3.9V3.9A3.91,3.91,0,0,0,42.67,0ZM3,25V2.72H43.23V25Z" fill="#63d1bb"/><path d="M6.93,21.05H39.32V6.62H6.93ZM23.29,8.52A5.32,5.32,0,1,1,18,13.83,5.31,5.31,0,0,1,23.29,8.52Z" fill="#63d1bb"/></svg>
-						<p class="about__text">
-							Скандинавский стиль 
-							<br>по российской цене
-						</p>
-					</li>
-					<li class="about__item about__item--likes">
-						<svg class="about__icon about__icon--heart" xmlns="http://www.w3.org/2000/svg" width="34" height="27" viewBox="0 0 33.05 27.86"><path d="M33.05,8.74A8.74,8.74,0,0,0,16.52,4.79,8.73,8.73,0,0,0,0,8.74c0,9.12,14.66,19.12,16.52,19.12S33.05,17.91,33.05,8.74Z" fill="#63d1bb"/></svg>
-						<p class="about__text">
-							Увеличивает лайки
-							<br>на фотографиях
-						</p>
-					</li>
-					<li class="about__item about__item--manually">
-						<svg class="about__icon about__icon--clew" xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 34.37 34.37"><path d="M.29,14.07a17.11,17.11,0,0,0,0,6.3l4.12-3.21Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M24.4,1.59A17.2,17.2,0,0,0,9.15,2l7.51,5.63Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M33.9,13.17l-4.81,3.75L34,20.62A17.34,17.34,0,0,0,33.9,13.17Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M9.21,32.41a17.22,17.22,0,0,0,15.73.12l-8.1-6.06Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M7.91,14.43,1.68,9.77a17.18,17.18,0,0,0-.82,2.05l5.3,4Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M18.59,25.1l8.34,6.24c.28-.19.55-.39.82-.6s.62-.5.92-.77l-8.33-6.23Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M11.41,11.71,4,6.16A19,19,0,0,0,2.73,7.88l6.93,5.19Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M22.09,22.38l8.09,6.05a15,15,0,0,0,1.3-1.7L23.84,21Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M14.91,9,7.2,3.2l-.58.43c-.39.31-.77.63-1.13,1l7.67,5.74Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M25.59,19.65l7,5.22a17.15,17.15,0,0,0,.86-2l-6.08-4.55Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M26.45,2.71.88,22.63a17.13,17.13,0,0,0,.84,2.06L28.24,4A16.07,16.07,0,0,0,26.45,2.71Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M30.74,6.62c-.3-.38-.61-.75-.94-1.1l-27,21.05c.26.4.54.79.84,1.18l.43.53,27.1-21.1C31,7,30.89,6.81,30.74,6.62Z" transform="translate(0 0)" fill="#6cc7b6"/><path d="M32.3,9,5.55,29.84a18.44,18.44,0,0,0,1.71,1.38L33.22,11A17,17,0,0,0,32.3,9Z" transform="translate(0 0)" fill="#6cc7b6"/></svg>
-						<p class="about__text">
-							Связано вручную с 
-							<br>любовью и умилением
-						</p>
-					</li>
-					<li class="about__item about__item--support">
-						<svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="55" height="23" viewBox="0 0 54.16 23.18"><path d="M40.31,5.71A47.8,47.8,0,0,0,28,4.05a46.38,46.38,0,0,0-7.71.62L13.46,0H0L5.81,6.19h8.45A22,22,0,0,0,7.5,9.7v3.78A24.33,24.33,0,0,0,14.43,17H5.81L0,23.18H13.46l6.81-4.69a44,44,0,0,0,7.68.65,48.22,48.22,0,0,0,12.36-1.67,10.7,10.7,0,0,1-1.92-5.87A10.66,10.66,0,0,1,40.31,5.71Z" fill="#63d1bb"/><path d="M43.73,6.75a7.87,7.87,0,0,0-2,4.84,7.79,7.79,0,0,0,2,4.84,48.43,48.43,0,0,0,10.42-4.84A48.38,48.38,0,0,0,43.73,6.75Z" fill="#63d1bb"/></svg>
-						<p class="about__text">
-							Поддержка отечественного 
-							<br>производителя
-						</p>
-					</li>
-					<li class="about__item about__item--box">
-						<svg class="about__icon about__icon--box" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 32.67 32.49"><path d="M2.89,32.49H15.4V18.58H2.89ZM31.08,8.87H23.74A10.81,10.81,0,0,0,25.14,8a5.06,5.06,0,0,0,2.42-4,3.87,3.87,0,0,0-1.36-2.9,4.61,4.61,0,0,0-3-1.12,6,6,0,0,0-3.32,1.07,10.62,10.62,0,0,0-3.42,4.07l-.12.23a11.9,11.9,0,0,0-1-1.79,9.74,9.74,0,0,0-2.49-2.51A6,6,0,0,0,9.46,0,4.59,4.59,0,0,0,6.31,1.3,4.31,4.31,0,0,0,4.9,4.43a4,4,0,0,0,.65,2.19A6.53,6.53,0,0,0,8.18,8.87H1.59A1.59,1.59,0,0,0,0,10.46v5.89H15.4V8.87h1.87v7.48h15.4V10.46a1.59,1.59,0,0,0-1.59-1.59M8.71,6.53A3.63,3.63,0,0,1,7.5,5.39a1.75,1.75,0,0,1-.3-1A2.09,2.09,0,0,1,7.89,3,2.36,2.36,0,0,1,9.45,2.3h0a3.68,3.68,0,0,1,2,.68,8.41,8.41,0,0,1,2.65,3.19A10.64,10.64,0,0,1,15,8.26,14.9,14.9,0,0,1,8.71,6.53M19.25,4.9A7.36,7.36,0,0,1,21.14,3a3.69,3.69,0,0,1,2.05-.68h0a2.32,2.32,0,0,1,1.5.55A1.58,1.58,0,0,1,25.26,4c0,.51-.27,1.26-1.47,2.13a15.74,15.74,0,0,1-6.12,2.27A10.6,10.6,0,0,1,19.25,4.9m-2,27.59H29.78V18.58H17.27Z" transform="translate(0 0)" fill="#63d1bb"/></svg>
-						<p class="about__text">
-							Поставляется в 
-							<br>подарочной упаковке
-						</p>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="reviews">
-			<div class="reviews__inner">
-				<h2 class="reviews__title title">Отзывы</h2>
-				<ul class="reviews__list">
-					<li class="reviews__item">
-						<p class="reviews__text">
-							Я молодая мама, но всё 
-							равно фотографии не 
-							набирали и близко такого 
-							количества лайков, как 
-							у популярных инстамамочек.
-							В отчаянии, я накупила 
-							аксессуаров и игрушек в Мишке, 
-							и мои фотографии сразу 
-							стали более стильными, а 
-							также набирают больше лайков!
-						</p>
-						<p class="reviews__name">
-							Анастасия Красильникова
-							<a class="reviews__mail" href="#">@misssssiskras</a>
-						</p>
-					</li>
-					<li class="reviews__item">
-						<p class="reviews__text">
-							Я молодая мама, но всё 
-							равно фотографии не 
-							набирали и близко такого 
-							количества лайков, как 
-							у популярных инстамамочек.
-							В отчаянии, я накупила 
-							аксессуаров и игрушек в Мишке, 
-							и мои фотографии сразу 
-							стали более стильными, а 
-							также набирают больше лайков!
-						</p>
-						<p class="reviews__name">
-							Анастасия Красильникова
-							<a class="reviews__mail" href="#">@misssssiskras</a>
-						</p>
-					</li>
-					<li class="reviews__item">
-						<p class="reviews__text">
-							Я молодая мама, но всё 
-							равно фотографии не 
-							набирали и близко такого 
-							количества лайков, как 
-							у популярных инстамамочек.
-							В отчаянии, я накупила 
-							аксессуаров и игрушек в Мишке, 
-							и мои фотографии сразу 
-							стали более стильными, а 
-							также набирают больше лайков!
-						</p>
-						<p class="reviews__name">
-							Анастасия Красильникова
-							<a class="reviews__mail" href="#">@misssssiskras</a>
-						</p>
-					</li>
-				</ul>
-				<a class="reviews__btn btn" href="#">Написать</a>
-			</div>
-		</section>
+			</section>
+	
+			<section class="video">
+				<h2 class="video__title">
+					Процесс
+					производства
+				</h2>
+				<div class="video__content"></div>
+				<div class="video__descr">
+					<p class="video__text">
+						По просьбам наших любимых 
+						фолловеров мы сняли для вас 
+						подробное видео о том, как 
+						появляются наши товары.
+					</p>
+					<a class="video__btn btn" type="button" href="#">Сделать заказ</a>
+				</div>
+			</section>
+		</div>
 	</main>
 
 	<footer class="footer">

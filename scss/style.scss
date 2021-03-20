@@ -428,6 +428,7 @@
 		border: 1px solid #ececec;
 
 		background-color: transparent;
+		cursor: pointer;
 		&::after {
 			content: '';
 
@@ -521,6 +522,14 @@
 	}
 	&__logo {
 		display: none;
+		&[href] {
+			&:hover {
+				opacity: 0.6;
+			}
+			&:active {
+				opacity: 0.3;
+			}
+		}
 	}
 	&__copy {
 		display: flex;
