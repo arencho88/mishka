@@ -150,6 +150,9 @@
 			width: 385px;
 			order: 3;
 
+			position: relative;
+			z-index: 2;
+
 			font-size: 15px;
 		}
 		&__item--new,
@@ -163,6 +166,9 @@
 		&__delivery {
 			display: block;
 			order: 4;
+
+			position: relative;
+			z-index: 2;
 		}
 	}
 
@@ -457,7 +463,7 @@
 
 
 	// страница каталога ========================/
-	.catalog-page__title {
+	.page-title {
 		margin: 0 auto 80px;
 		padding: 100px 0 75px;
 
@@ -773,7 +779,7 @@
 
 
 	// страница каталога ========================/
-	.catalog-page__title {
+	.page-title {
 		margin: 0 auto 128px;
 		padding: 100px 0 93px;
 
