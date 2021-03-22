@@ -19,6 +19,12 @@ body {
 	font-weight: 400;
 	color: #000;
 }
+input {
+  appearance: none;
+}
+label {
+  -webkit-tap-highlight-color: transparent;
+}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
