@@ -115,6 +115,16 @@
 			padding: 14px 36px;
 		}
 	}
+
+
+
+	// страница формы ===========================/
+	.form-page__descr {
+		margin: 0 auto 68px;
+
+		font-size: 17px;
+		line-height: 30px;
+	}
 }
 
 
@@ -545,6 +555,145 @@
 			line-height: 30px;
 		}
 	}
+
+
+
+	// страница формы ===========================/
+	.form-page__descr {
+		padding: 0 50px;
+	}
+	.form {
+		margin: 0 0 50px;
+		&__group-wrapper {
+			background-color: #f1f1f1;
+		}
+		&__group {
+			display: flex;
+			align-items: flex-start;
+		}
+		&__type {
+			padding: 0 0 12px;
+		}
+		&__color {
+			margin: 0 auto 53px;
+			padding: 67px 50px 15px;
+		}
+		&__contacts {
+			padding: 68px 50px 26px;
+			margin: 0 auto 50px;
+		}
+		&__legend {
+			width: 25%;
+			margin: 0;
+			&::after {
+				display: none;
+			}
+		}
+		&__label-box {
+			width: 75%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&__label {
+			font-size: 19px;
+		}
+		&__type-label,
+		&__color-label {
+			padding: 0 0 0 80px;
+		}
+		&__type-label {
+			width: 100%;
+			margin: 0 0 50px;
+		}
+		&__color-label {
+			width: 48%;
+			margin: 0 0 55px;
+		}
+		&__radio-indicator {
+			width: 51px;
+			height: 51px;
+
+			top: -13.5px;
+		}
+		&__radio-inp:checked + .form__radio-indicator {
+			&::after {
+				width: 20px;
+				height: 20px;
+			}
+		}
+		&__checkbox-indicator {
+			width: 54px;
+			height: 52px;
+			&::after {
+				width: 33px;
+				height: 22px;
+			}
+		}
+		&__FIO {
+			padding: 0 0 26px;
+		}
+		&__FIO-legend {
+			padding: 12px 0 0;
+		}
+		&__FIO-label,
+		&__contacts-label {
+			width: 100%;
+			margin: 0 0 24px;
+			display: flex;
+			align-items: center;
+		}
+		&__text-inp {
+			font-size: 19px;
+			padding: 12px 15px;
+		}
+		&__FIO-text {
+			margin: 0 24px 0 0;
+		}
+		&__contacts-label-box {
+			width: 100%;
+		}
+		&__contacts-text {
+			width: 25%;
+			&::after {
+				display: none;
+			}
+		}
+		&__contacts-inp {
+			width: 75%;
+			padding: 12px 55px 12px 15px;
+		}
+		&__contacts-phone-icon {
+			right: 26px;
+		}
+		&__contacts-mail-icon {
+			right: 22px;
+		}
+		&__additionally {
+			margin: 0 0 53px;
+		}
+		&__textarea {
+			width: 75%;
+
+			font-size: 19px;
+		}
+		&__bottom {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__required {
+			margin: 0;
+			order: 2;
+
+			font-size: 17px;
+			line-height: 24px;
+		}
+		&__btn {
+			width: 230px;
+			padding: 14px 28px;
+		}
+	}
 }
 
 
@@ -851,6 +1000,58 @@
 		}
 		&__btn {
 			margin: 0 0 0 760px;
+		}
+	}
+
+
+
+	// страница формы ===========================/
+	.form-page__descr {
+		padding: 0 225px;
+	}
+	.form {
+		&__type {
+			padding: 0 175px 12px 65px;
+		}
+		&__color {
+			padding: 67px 195px 15px 113px;
+		}
+		&__contacts {
+			padding: 68px 50px 26px 113px;
+		}
+		&__legend {
+			width: 111px;
+			margin: 0;
+		}
+		&__label-box {
+			width: 700px;
+		}
+		&__color-label-box {
+			width: 730px;
+		}
+		&__color-label {
+			width: 205px;
+		}
+		&__FIO {
+			padding: 0 0 26px 65px;
+		}
+		&__contacts-label-box {
+			width: 813px;
+		}
+		&__contacts-text {
+			width: 111px;
+		}
+		&__contacts-inp {
+			width: 700px;
+		}
+		&__additionally {
+			padding: 0 0 0 65px;
+		}
+		&__textarea {
+			width: 700px;
+		}
+		&__bottom {
+			padding: 0 225px 0 113px;
 		}
 	}
 }

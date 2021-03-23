@@ -66,4 +66,10 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+
+    background-color: #444;
+  }
 }

@@ -416,12 +416,16 @@
 		line-height: 30px;
 		color: #444;
 		text-decoration: none;
+
+		outline: none;
 	}
 	.slick-list {
 		margin: 0 0 0 -50px;
 	}
 	.slick-slide {
 		margin: 0 0 0 50px;
+
+		outline: none;
 	}
 	.slick-arrow {
 		position: absolute;
@@ -444,6 +448,12 @@
 			width: 50px;
 			height: 26px;
 			transform: translate(-50%, -50%);
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+		&:active {
+			opacity: 0.3;
 		}
 	}
 	.slick-prev {
@@ -494,6 +504,13 @@
 			line-height: 24px;
 			color: #444;
 			text-decoration: none;
+			&:hover {
+				color: $green;
+			}
+			&:active {
+				color: rgba($color: $green, $alpha: 0.3);
+				border-color: rgba($color: $green, $alpha: 0.3);
+			}
 		}
 	}
 	&__address {
@@ -712,6 +729,9 @@
 	flex-direction: column;
 	max-width: 450px;
 	margin: 0 auto 58px;
+	&:hover {
+		box-shadow: 0 6px 10px 1px rgba($color: #000, $alpha: 0.1);
+	}
 	&__title {
 		margin: 0;
 		padding: 27px 42px 23px 90px;
@@ -794,17 +814,11 @@
 }
 .form {
 	margin: 0 0 55px;
-	&__group {
-		margin: 0;
-		padding: 0;
-		border: none;
-	}
 	&__type {
 		padding: 0 0 22px;
 	}
 	&__color,
 	&__contacts {
-		display: block;
 		max-width: 1150px;
 		margin: 0 auto;
 		padding: 0 30px;
@@ -812,7 +826,6 @@
 	&__legend {
 		display: flex;
 		align-items: center;
-		width: 100%;
 		margin: 0 0 30px;
 
 		font-size: 17px;
@@ -842,9 +855,33 @@
 	}
 	&__type-label {
 		margin: 0 0 20px;
+
+		cursor: pointer;
+		&:hover {
+			.form__radio-indicator {
+				border-color: $green;
+			}
+		}
+		&:active {
+			.form__radio-indicator {
+				border-color: rgba($color: #444, $alpha: 0.3);
+			}
+		}
 	}
 	&__color-label {
 		margin: 0 0 40px;
+
+		cursor: pointer;
+		&:hover {
+			.form__checkbox-indicator {
+				border-color: $green;
+			}
+		}
+		&:active {
+			.form__checkbox-indicator {
+				border-color: rgba($color: #444, $alpha: 0.3);
+			}
+		}
 	}
 	&__radio-indicator {
 		width: 38px;
@@ -892,6 +929,8 @@
 			transform: translate(-50%, -50%) scale(0);
 
 			background-image: url(../images/icons/checkbox.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
 			transition: all 0.2s;
 		}
 	}
@@ -905,6 +944,13 @@
 	}
 	&__FIO-label {
 		margin: 0 0 22px;
+
+		cursor: pointer;
+		&:hover {
+			.form__FIO-inp {
+				border-bottom-color: $green;
+			}
+		}
 	}
 	&__FIO-text {
 		display: block;
@@ -918,13 +964,35 @@
 
 		font-size: 17px;
 		line-height: 24px;
-		color: #000;
+		color: #444;
+
+		background-color: transparent;
+		outline: none;
 		&::placeholder {
 			color: rgba(#444, 0.3);
 		}
 	}
+	&__FIO-inp {
+		&:focus {
+			border-bottom-color: $green;
+		}
+	}
 	&__contacts-label {
 		margin: 0 0 30px;
+
+		cursor: pointer;
+		&:hover {
+			.form__contacts-inp {
+				border-bottom-color: $green;
+			}
+			.form__contacts-phone-icon,
+			.form__contacts-mail-icon {
+				opacity: 1;
+				path {
+					fill: $green;
+				}
+			}
+		}
 	}
 	&__contacts-text {
 		display: flex;
@@ -942,6 +1010,19 @@
 			margin-left: 18px;
 
 			background-color: $green;
+		}
+	}
+	&__contacts-inp {
+		padding: 12px 40px 12px 0;
+		&:focus {
+			border-bottom-color: $green;
+			& + .form__contacts-phone-icon,
+			& + .form__contacts-mail-icon {
+				opacity: 1;
+				path {
+					fill: $green;
+				}
+			}
 		}
 	}
 	&__contacts-phone-icon,
@@ -976,8 +1057,16 @@
 		font-size: 17px;
 		line-height: 24px;
 		color: #000;
+
+		appearance: none;
+		outline: none;
+		-webkit-tap-highlight-color: transparent;
 		&::placeholder {
 			color: rgba(#444, 0.3);
+		}
+		&:hover,
+		&:focus {
+			border-color: $green;
 		}
 	}
 	&__required {
