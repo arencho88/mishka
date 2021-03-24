@@ -72,4 +72,9 @@ input[type="radio"].visually-hidden {
 
     background-color: #444;
   }
+  &:active {
+    color: rgba($color: #fff, $alpha: 0.3);
+
+    background-color: #444;
+  }
 }

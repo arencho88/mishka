@@ -66,6 +66,32 @@
 	</header>
 
 	<main class="catalog-page">
+		<!-- Модалка ------------------------------------------------------------------ -->
+		<section class="modal">
+			<div class="modal__inner">
+				<h2 class="modal__title">Добавить в корзину</h2> 
+				<form class="modal__form" action="#">
+					<p class="modal__form-choice">Выберите размер:</p>
+					<div class="modal__form-box">
+						<label class="modal__label">
+							<input class="modal__checkbox visually-hidden" type="checkbox" name="size" value="s" checked>
+							<span class="modal__checkbox-indicator">S</span>
+						</label>
+						<label class="modal__label">
+							<input class="modal__checkbox visually-hidden" type="checkbox" name="size" value="m">
+							<span class="modal__checkbox-indicator">M</span>
+						</label>
+						<label class="modal__label">
+							<input class="modal__checkbox visually-hidden" type="checkbox" name="size" value="l">
+							<span class="modal__checkbox-indicator">L</span>
+						</label>
+					</div>
+					<button class="modal__btn btn" type="submit">Добавить</button>
+				</form>
+			</div>		
+		</section>
+		<!-- -------------------------------------------------------------------------- -->
+
 		<h1 class="page-title title">
 			Каталог товаров
 		</h1>

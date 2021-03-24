@@ -130,6 +130,26 @@
 
 
 @media (min-width: 768px) {
+	// Модалка ------------------------/
+	.modal {
+		&__inner {
+			width: 570px;
+			padding: 38px 108px 46px;
+		}
+		&__title {
+			width: auto;
+			margin: 0 auto 12px;
+
+			font-size: 30px;
+			line-height: 57px;
+		}
+		&__form-choice {
+			font-size: 17px;
+		}
+		&__checkbox-indicator {
+			width: 113px;
+		}
+	}
 	// container ----------------------/
 	.container {
 		padding: 0 50px;
