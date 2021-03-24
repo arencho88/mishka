@@ -30,6 +30,7 @@ function styles(){
 	return src([
 			'node_modules/normalize.css/normalize.css',
 			'node_modules/slick-carousel/slick/slick.scss',
+			// 'node_modules/lazyframe/dist/lazyframe.css',
 			'app/scss/style.scss',
 		])
 		.pipe(scss({outputStyle: 'compressed'}))
@@ -46,6 +47,7 @@ function scripts(){
 	return src([
 		'node_modules/jquery/dist/jquery.min.js',
 		'node_modules/slick-carousel/slick/slick.min.js',
+		// 'node_modules/lazyframe/dist/lazyframe.min.js',
 		'app/js/main.js',
 	])  
 	.pipe(concat('main.min.js'))
